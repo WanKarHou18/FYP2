@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_printer"
+    app:startDestination="@+id/nav_home_printer">
+
+    <fragment
+        android:id="@+id/nav_home_printer"
+        android:name="com.example.fyp.ui_printer.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_printer" />
+
+    <fragment
+        android:id="@+id/nav_printer_order"
+        android:name="com.example.fyp.ui_printer.Order.OrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/fragment_order_printer" />
+
+    <fragment
+        android:id="@+id/nav_printer_setting"
+        android:name="com.example.fyp.ui_printer.ProfileSetting.ProfileSettingFragment"
+        android:label="Profile Setting"
+        tools:layout="@layout/fragment_printer_setting" />
+
+    <fragment
+        android:id="@+id/nav_printer_business_setting"
+        android:name="com.example.fyp.ui_printer.BusinessSetting.businessSettingFragment"
+        android:label="Business Setting"
+        tools:layout="@layout/fragment_business_setting" />
+
+    <fragment
+        android:id="@+id/nav_printer_document_printing_setting"
+        android:name="com.example.fyp.ui_printer.PrintingPreferencesSetting.DocumentPrintingSettingFragment"
+        android:label="Document printing preferences setting"
+        tools:layout="@layout/fragment_document_printing_setting" />
+    <fragment
+        android:id="@+id/nav_printer_image_printing_setting"
+        android:name="com.example.fyp.ui_printer.PrintingPreferencesSetting.PhotoPrintingSettingFragment"
+        android:label="Photo printing preferences setting"
+        tools:layout="@layout/fragment_photo_printing_setting" />
+
+</navigation>

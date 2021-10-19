@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">FRENZ</string>
+
+    <!--Splash Screen-->
+    <string name="splash_txt1">Print anywhere with one click</string>
+
+    <!--Login Page-->
+    <string name="etUserLoginUserHint">Email</string>
+    <string name="etUserLoginPasswordHint">Password</string>
+    <string name="tvUserSignUp">Sign Up </string>
+    <string name="btnUserLoginEmail">Log In </string>
+
+    <!--Sign Up Page-->
+    <string name="LabelUserSignUpPage">Sign Up</string>
+    <string name="tvDisplayUserSignUpPage">User Register Page</string>
+    <string name="title_register">Account Register</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="login_hint">Email Address</string>
+    <string name="pwd_hint">Password</string>
+    <string name="username_hint">Username</string>
+    <string name="address_hint">Home Address</string>
+    <string name="handphone_hint">Phone Number</string>
+    <string name="btRegister">Register</string>
+    <string name="_title_user_register">User Registration</string>
+    <string name="btRegisterUser">Register as User</string>
+
+    <!--Sign Up Page- Radio Button-->
+    <string name="rb_customer">Customer</string>
+    <string name="rb_printer">Printer</string>
+
+    <!--Navigation Drawer Related-->
+    <string name="title_activity_customer_main">CustomerMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--activity_main_drawer.xml-->
+    <string name="menu_home">Home</string>
+    <string name="menu_orders">Orders</string>
+    <string name="menu_orderlist">Orders List</string>
+    <string name="menu_profile_setting">Profile Setting</string>
+    <string name="menu_order">Order</string>
+    <string name="title_activity_printer_main">PrinterMainActivity</string>
+    <string name="menu_logout">Logout</string>
+    <string name="admin_viewUserStatistics">User Statistics</string>
+    <string name="admin_viewFeedbackRating">Feedback and Rating</string>
+    <string name="admin_viewComplaints">Complaints</string>
+
+    <!--printer_menu_list.xml-->
+    <string name="content_description">Images for user profile</string>
+    <string name="hello_blank_fragment">DOC</string>
+
+    <!--activity_cust_order_second.xml-->
+    <string name="rb_pdf">PDF</string>
+    <string name="rb_image">Image</string>
+    <string name="rb_doc">DOC</string>
+
+
+    <string name="cb_own_loc">Using Location Set in Profile</string>
+    <string name="title_activity_admin__view_printer_feedback_profile">
+        admin_ViewPrinterFeedbackProfileActivity
+    </string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_cust_order_fifth">CustOrderFifthActivity</string>
+
+
+</resources>

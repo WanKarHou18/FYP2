@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/etRange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui_customer.Orders.OrderDocumentPreferencesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--ROW 3-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CLuploadFile"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btnSelectDocument"
+                    android:layout_width="176dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="119dp"
+                    android:layout_marginLeft="119dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="116dp"
+                    android:layout_marginRight="116dp"
+                    android:layout_marginBottom="22dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:onClick="FileUpload"
+                    android:text="Select Document"
+                    app:backgroundTint="@color/light_purple_800"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="210dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="117dp"
+                android:layout_marginLeft="117dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginRight="84dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Continue"
+                app:backgroundTint="#FF8F00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout17" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout17"
+                android:layout_width="0dp"
+                android:layout_height="497dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CLuploadFile">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="113dp"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rgSelectColor"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingRight="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rbColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#CCC6C6"
+                            android:fontFamily="@font/raleway_medium"
+                            android:text="Color"
+                            android:textColor="#070606" />
+
+                        <RadioButton
+                            android:id="@+id/rbBlackWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#CCC6C6"
+                            android:fontFamily="@font/raleway_medium"
+                            android:text="Black and White" />
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rgPL"
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:background="@color/white"
+                        android:paddingLeft="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rbPortrait"
+                            android:layout_width="177dp"
+                            android:layout_height="wrap_content"
+                            android:background="#CCC6C6"
+                            android:fontFamily="@font/raleway_medium"
+                            android:text="Portrait" />
+
+                        <RadioButton
+                            android:id="@+id/rbLandscape"
+                            android:layout_width="177dp"
+                            android:layout_height="wrap_content"
+                            android:background="#CCC6C6"
+                            android:fontFamily="@font/raleway_medium"
+                            android:shadowColor="#FFFFFF"
+                            android:text="LandScape" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rgEdge"
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingRight="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rbLongEdge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#CCC6C6"
+                            android:fontFamily="@font/raleway_medium"
+                            android:text="Long Edge" />
+
+                        <RadioButton
+                            android:id="@+id/rbShortEdge"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:background="#CCC6C6"
+                            android:fontFamily="@font/raleway_medium"
+                            android:text="Short Edge" />
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rg_Slides"
+                        android:layout_width="193dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rbOneSlided"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#CCBFBF"
+                            android:fontFamily="@font/raleway_medium"
+                            android:text="One Sided" />
+
+                        <RadioButton
+                            android:id="@+id/rbDoubleSlided"
+                            android:layout_width="183dp"
+                            android:layout_height="match_parent"
+                            android:background="#CCC6C6"
+                            android:fontFamily="@font/raleway_medium"
+                            android:text="Two-Sided" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="10dp">
+
+                        <RadioGroup
+                            android:id="@+id/rgSlidesArrange"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#CCC6C6">
+
+                            <RadioButton
+                                android:id="@+id/rb_horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="59dp"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Horizontal" />
+
+                            <RadioButton
+                                android:id="@+id/rb_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Vertical" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="#FFFFFF"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="Copies"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/et_copies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="@font/raleway_medium"
+                            android:hint="e.g 1"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSlidePerPage"
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="Slides Per Page :"
+                            android:textColor="@color/black" />
+
+                        <Spinner
+                            android:id="@+id/spinner_slide"
+                            android:layout_width="195dp"
+                            android:layout_height="47dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/tvPageRange"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="Page Range :"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/etPageRange"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="e.g 1-4"
+                            android:inputType="textPersonName"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvPageRange" />
+
+                        <CheckBox
+                            android:id="@+id/cbAllPages"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="All Pages" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2FC6C0C0"
+    tools:context=".ui_printer.PrintingPreferencesSetting.DocumentPrintingSettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Color / BlackWhite"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <CheckBox
+                    android:id="@+id/cb_colorDocPrefSetting"
+                    android:layout_width="204dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Color"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_blackWhiteDocPrefSetting"
+                    android:layout_width="203dp"
+                    android:layout_height="51dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Black White"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Portrait/Landscape"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+                <CheckBox
+                    android:id="@+id/cb_potraitDocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Portrait"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_landscapeDocPrefSetting"
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Landscape"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Edge"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+                <CheckBox
+                    android:id="@+id/cb_longEdgeDocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Long Edge"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_shortEdgeDocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Short Edge"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Sided"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="349dp"
+                android:layout_height="53dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+                <CheckBox
+                    android:id="@+id/cb_oneSlidedDocPrefSetting"
+                    android:layout_width="218dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="One-Sided"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/cb_doubleSlidedDocPrefSetting"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Two-Sided"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Slides Per Page"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                <CheckBox
+                    android:id="@+id/cb_1DocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_2DocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_4DocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_6DocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_8DocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Slides Arrangement"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout12"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+                <CheckBox
+                    android:id="@+id/cb_horizontalDocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Horizontal"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/cb_verticalDocPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Vertical"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="372dp"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+
+                <LinearLayout
+                    android:layout_width="166dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="Min Copies"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_minCopiesDocPrefSetting"
+                        android:layout_width="84dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#2FC6C0C0"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g 1"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="Max Copies"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_maxCopiesDocPrefSetting"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#2FC6C0C0"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g 10"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_saveDocPrefSetting"
+                android:layout_width="136dp"
+                android:layout_height="49dp"
+                android:text="Save"
+                app:backgroundTint="#FF8F00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout13" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout14"
+                android:layout_width="372dp"
+                android:layout_height="78dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <LinearLayout
+                    android:layout_width="167dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="78dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/raleway_medium"
+                        android:paddingStart="5dp"
+                        android:text="Price Per Page   (BlackWhite)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_pricePerPageBWDocPrefSetting"
+                        android:layout_width="84dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#2FC6C0C0"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g 5.00"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="71dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:paddingLeft="5dp"
+                        android:text="Price Per Page    (Color)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_pricePerPageColorDocPrefSetting"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#2FC6C0C0"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g 5.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Availability"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="413dp"
+                android:layout_height="42dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Prices"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout15" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout15"
+                android:layout_width="391dp"
+                android:layout_height="41dp"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+                <CheckBox
+                    android:id="@+id/cb_availableDocPrefSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/raleway_medium"
+                    android:paddingLeft="15dp"
+                    android:text="Available"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

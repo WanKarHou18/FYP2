@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.UserSignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvUserRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="75dp"
+                android:gravity="center"
+                android:shadowColor="@color/white"
+                android:text="@string/_title_user_register"
+                android:textAlignment="center"
+                android:textColor="@color/purple_800"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btUserReg"
+                android:layout_width="237dp"
+                android:layout_height="57dp"
+                android:gravity="center"
+                android:text="@string/btRegisterUser"
+                app:backgroundTint="#FF8F00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout33" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout33"
+                android:layout_width="300dp"
+                android:layout_height="487dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="47dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserRegister">
+
+                <EditText
+                    android:id="@+id/etUserUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                    android:drawableLeft="@drawable/ic_baseline_account_circle_24"/>
+
+                <TextView
+                    android:id="@+id/tv_signup_username_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red_800"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/etUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@android:drawable/sym_action_email"
+                    android:drawableLeft="@android:drawable/sym_action_email"
+                    android:hint="@string/login_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_signup_userEmail_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red_800"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/etUserhp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@android:drawable/ic_menu_call"
+                    android:drawableLeft="@android:drawable/ic_menu_call"
+                    android:hint="@string/handphone_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPhonetic"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_signup_userhp_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red_800"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/etUserAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_hint"
+                    android:importantForAutofill="no"
+                    android:drawableStart="@drawable/ic_address"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:inputType="textPostalAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_signup_address_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red_800"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/etUserPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                    android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                    android:hint="@string/pwd_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/user_signup_password_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red_800"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_signup_PBE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_bank_ref"
+                    android:drawableLeft="@drawable/ic_bank_ref"
+                    android:ems="10"
+                    android:hint="PBE Beneficiary Account Number"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_signup_PBE_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red_800"
+                    android:textSize="10sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgUserRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_printer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/rb_printer"
+                        android:textColor="@color/light_purple_800" />
+
+                    <RadioButton
+                        android:id="@+id/rb_customer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/rb_customer"
+                        android:textColor="@color/light_purple_800" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CLhome2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_customer.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="410dp"
+        android:layout_height="731dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CLprinter_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CL_search">
+
+            <ListView
+                android:id="@+id/printer_list"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CL_search"
+            android:layout_width="410dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CLtopbanner">
+
+            <LinearLayout
+                android:id="@+id/linearLayout29"
+                android:layout_width="410dp"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_filter_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="Filter Printer By"
+                    android:textColor="@color/red_800"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:paddingRight="200dp"
+                    android:src="@drawable/ic_filter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="411dp"
+                android:layout_height="73dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout29">
+
+                <Button
+                    android:id="@+id/btn_all"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#FFFFFF"
+                    android:text="All"
+                    android:textSize="14sp"
+                    app:backgroundTint="#FF8F00" />
+
+                <Button
+                    android:id="@+id/btn_filter_type"
+                    android:layout_width="118dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Printing Type"
+                    app:backgroundTint="#FF8F00" />
+
+                <Button
+                    android:id="@+id/btn_filter_loc"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="shipping option"
+                    android:textSize="14sp"
+                    app:backgroundTint="#FF8F00"
+                    app:strokeColor="@color/purple_200" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CLtopbanner"
+            android:layout_width="409dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

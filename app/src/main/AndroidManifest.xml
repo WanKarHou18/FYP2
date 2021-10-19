@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fyp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:configChanges="orientation|screenSize"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FYP">
+        <activity android:name=".ui_customer.CustomerOrdersList.ShowPrinterProfileActivity"></activity>
+        <activity android:name=".ui_customer.Tools.BlurrActitvity" />
+        <activity android:name=".ui_customer.Tools.GrayScaleActivity" />
+        <activity android:name=".ui_printer.Order.PrinterViewSubOrderDetailsActivity" />
+        <activity android:name=".ui_printer.Order.PrinterViewOrderDetailsActivity" />
+        <activity android:name=".ui_customer.CustomerOrdersList.CustViewSubOrderDetailsActivity" />
+        <activity android:name=".ui_customer.CustomerOrdersList.CustViewOrderDetailActivity" />
+        <activity
+            android:name=".ui_customer.Orders.CustOrderFifthActivity"
+            android:label="@string/title_activity_cust_order_fifth"
+            android:theme="@style/Theme.FYP.NoActionBar" />
+        <activity android:name=".ui_admin.admin_viewComplaint.adminViewComplaintContentActivity" />
+        <activity
+            android:name=".ui_admin.admin_viewRatingFeedback.admin_ViewPrinterFeedbackProfileActivity"
+            android:label="@string/title_activity_admin__view_printer_feedback_profile"
+            android:theme="@style/Theme.FYP.NoActionBar" />
+        <activity android:name=".ui_admin.admin_viewRatingFeedback.admin_viewPrinterRatingProfileActivity" />
+        <activity android:name=".ui_customer.feedback.FeedbackActivity" />
+        <activity android:name=".ui_admin.admin_home.AdminMarkAccessStatus" />
+        <activity android:name=".ui_printer.home.PrinterViewReceivedSubOrderDetailsActivity" />
+        <activity android:name=".ui_printer.home.PrinterReceivedOrderMainActivity" />
+        <activity android:name=".ui_customer.Orders.CustOrderForthActivity" />
+        <activity android:name=".ui_customer.Orders.CustOrderThirdActivity" />
+        <activity android:name=".ui_customer.Orders.CustOrderSecondActivity" />
+        <activity android:name=".profile.PrinterProfileActivity" />
+        <activity android:name=".ui_customer.Orders.CustOrderMainActivity" />
+        <activity
+            android:name=".PrinterMainActivity"
+            android:label="@string/title_activity_printer_main"
+            android:theme="@style/Theme.FYP.NoActionBar" />
+        <activity
+            android:name=".ui_printer.PrinterMainActivity"
+            android:label="@string/title_activity_printer_main"
+            android:theme="@style/Theme.FYP.NoActionBar" />
+        <activity
+            android:name=".printerMainActivity"
+            android:label="@string/title_activity_printer_main"
+            android:theme="@style/Theme.FYP.NoActionBar" />
+        <activity
+            android:name=".UserMainActivity"
+            android:label="@string/title_activity_customer_main"
+            android:theme="@style/Theme.FYP.NoActionBar" />
+        <activity android:name=".profile.UserSignUpActivity" />
+        <activity android:name=".profile.UserLoginActivity" />
+        <activity android:name=".animation.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_printer.PrintingPreferencesSetting.PhotoPrintingSettingFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:background="@color/purple_800"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"
+            android:text="Size"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout18"
+            android:layout_width="407dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+            <CheckBox
+                android:id="@+id/cb_3rPhotoPrefSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text='3.5"x5"(3R)'
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_4rPhotoPrefSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text='4"X6"(4R)'
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_5rPhotoPrefSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text='5"X5"(5R)'
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:background="@color/purple_800"
+            android:gravity="center"
+            android:text="Paper Type"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout18" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout19"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+            <CheckBox
+                android:id="@+id/cb_glossyhotoPrefSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Glossy"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/cb_mattePhotoPrefSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Matte"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_cardStackPhotoPrefSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text="CardStack"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout21"
+            android:layout_width="0dp"
+            android:layout_height="73dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout34">
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Availability"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <CheckBox
+                    android:id="@+id/cb_availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Availability"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:background="@color/purple_800"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"
+            android:text="Prices"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout21" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:background="@color/purple_800"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"
+            android:text="Border"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout19" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout22"
+            android:layout_width="403dp"
+            android:layout_height="45dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView42">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:text="Prices Per Photo(RM):"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_pricePhotoPrefSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#2FC6C0C0"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:hint="e.g 5.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="413dp"
+            android:layout_height="45dp"
+            android:background="@color/purple_800"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"
+            android:text="Copies"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout22" />
+
+        <Button
+            android:id="@+id/btn_continuePhotoPrefSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="151dp"
+            android:layout_marginLeft="151dp"
+            android:layout_marginEnd="172dp"
+            android:layout_marginRight="172dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Save"
+            android:textSize="14sp"
+            app:backgroundTint="#FF8F00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout16" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout16"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView39">
+
+            <LinearLayout
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Maximum Copies"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_maxCopiesPhotoPrefPrinting"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#2FC6C0C0"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="e.g 1"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="103dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:text="Minimum Copies"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_minCopiesPhotoPrefSetting"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#2FC6C0C0"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:hint="e.g 10"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout34"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35">
+
+            <CheckBox
+                android:id="@+id/cb_noBorder_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text="No Border"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/cb_5Border_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text="5cm x 5cm"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/cb_10Border_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text="10cm x 10cm"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

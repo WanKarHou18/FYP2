@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui_customer.Orders.CustOrderForthActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_purple_800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_bannerDateTime"
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Select Date and Time"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bannerDateTime">
+
+                <LinearLayout
+                    android:id="@+id/ll_banner_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#2EAFA3"
+                        android:backgroundTint="#2EAFA3"
+                        app:srcCompat="@drawable/ic_delivery" />
+
+                    <TextView
+                        android:id="@+id/tv_banner_delivery"
+                        android:layout_width="264dp"
+                        android:layout_height="match_parent"
+                        android:background="#2EAFA3"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_date"
+                        android:layout_width="121dp"
+                        android:layout_height="53dp"
+                        android:background="@color/white"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:srcCompat="@drawable/icon_date"
+                        tools:layout_editor_absoluteX="233dp"
+                        tools:layout_editor_absoluteY="246dp" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="230dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:text="e.g 15-8-2021"
+                        android:textColor="@color/red_800"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_time"
+                        android:layout_width="124dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:srcCompat="@drawable/icon_clock" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="252dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:text="e.g 0000"
+                        android:textColor="@color/red_800"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Shipping Option"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout24" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout26"
+                android:layout_width="411dp"
+                android:layout_height="209dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView53">
+
+                <RadioGroup
+                    android:id="@+id/rg_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="189dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_medium"
+                        android:paddingLeft="100dp"
+                        android:text="Delivery"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_addressFillUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_newLoc"
+                            android:layout_width="153dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:fontFamily="@font/raleway_medium"
+                            android:hint="Enter new Location"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/cb_own_loc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_medium"
+                            android:text="Location in Profile"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/rb_selfPick"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:paddingLeft="100dp"
+                        android:text="Self pick up in printer locaiton"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_PaymentOption"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Payment"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout26" />
+
+            <LinearLayout
+                android:id="@+id/cb_COD"
+                android:layout_width="411dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_PaymentOption">
+
+                <RadioGroup
+                    android:id="@+id/rg_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rb_CODselection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cash on Delivery"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_onlinePaymentSelection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="Online Payment via PBE "
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_continueOrder"
+                android:layout_width="122dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="161dp"
+                android:layout_marginLeft="161dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="162dp"
+                android:layout_marginRight="162dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Order"
+                android:textSize="14sp"
+                app:backgroundTint="#FF8F00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_COD" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

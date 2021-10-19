@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_printer.ProfileSetting.ProfileSettingFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_purple_800">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="387dp"
+                android:layout_height="500dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profileBanner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_editUsername"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="Username"
+                        android:textColor="@color/black"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_printerEditProfileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g John Doe"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="?android:attr/textColorHint" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_printer_username_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="@color/red_800"
+                    android:textSize="8sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_editEmailAddress"
+                        android:layout_width="141dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="Email Address"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_printerEditEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g johndoe@gmail.com"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_printer_emailAddress_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center|right"
+                    android:textColor="@color/red_800"
+                    android:textSize="8sp"
+                    tools:text="test" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="76dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="Home Address"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_printerEditHomeAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g 185 , Jalan Perak 10 , Taman Bandar Baru Selatan , 31900, Kampar"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_printer_homeAddress_ErrorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="@color/red_800"
+                    android:textSize="8sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="141dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="Phone Number"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_printerEditPhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g 014-5567783"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_printer_hp_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="@color/red_800"
+                    android:textSize="8sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="63dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="Password"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_printerEditPassword"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g R@3qw34"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_printer_password_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="@color/red_800"
+                    android:textSize="8sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="144dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="Beneficiary Account Number(PBE)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_printerEditBankReferences"
+                        android:layout_width="221dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:hint="e.g 6904578309"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_printer_PBE_errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="@color/red_800"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_profileBanner"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Profile Setting"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_printerSaveEditProfile"
+                android:layout_width="130dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="125dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Save"
+                android:textSize="14sp"
+                app:backgroundTint="#FF8F00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="406dp"
+        android:layout_height="61dp"
+        android:background="@color/purple_800"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="Complaint "
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="411dp"
+            android:layout_height="654dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="409dp"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+                <Button
+                    android:id="@+id/btn_blockSP"
+                    android:layout_width="164dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="BLOCK service provider"
+                    android:textSize="14sp"
+                    app:backgroundTint="#FF8F00"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_ignoreComplaint"
+                    android:layout_width="164dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="28dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Ignore"
+                    android:textSize="14sp"
+                    app:backgroundTint="#FF8F00"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_blockSP"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="408dp"
+                android:layout_height="94dp"
+                android:background="@color/white"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/light_purple_800"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="Complaint Content"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_custComplaintContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/raleway_medium"
+                        android:shadowColor="#FFFFFF"
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="408dp"
+                android:layout_height="195dp"
+                android:background="@color/white"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="388dp"
+                    android:layout_height="187dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="185dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:background="@color/purple_800"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="center"
+                            android:text="Customer Details"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Name"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_custName_complaint"
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView38"
+                                android:layout_width="379dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="User ID"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_custUserID_complaint"
+                                android:layout_width="512dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="25dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="HP"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_custHP_complaint"
+                                android:layout_width="157dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Email"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_custEmail_complaint"
+                                android:layout_width="167dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView45"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Address"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_custAddress_complaint"
+                                android:layout_width="248dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="408dp"
+                android:layout_height="191dp"
+                android:background="@color/white"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="171dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@color/purple_800"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="center"
+                            android:text="Service Provider Details"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="55dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Name"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_spName"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="97dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="User ID"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_spUserID"
+                                android:layout_width="202dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="19dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="38dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="HP"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_spHP"
+                                android:layout_width="143dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="44dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Email"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_spEmail"
+                                android:layout_width="148dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView32"
+                                android:layout_width="145dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Address"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_spAddress"
+                                android:layout_width="249dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/raleway_medium"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/red_800" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_printer"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+
+
+       <item
+            android:id="@+id/nav_printer_order"
+           android:icon="@drawable/ic_orders"
+            android:title="@string/menu_order" />
+
+    </group>
+<group>
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_printer_setting"
+                android:icon="@drawable/ic_setting"
+                android:title="Profile Setting" />
+            <item
+                android:id="@+id/nav_printer_image_printing_setting"
+                android:icon="@drawable/ic_navimage"
+                android:title="Photo Printing Preferences Setting" />
+            <item
+                android:id="@+id/nav_printer_document_printing_setting"
+                android:title="Document Printing Preferences Setting"
+                android:icon="@drawable/ic_navdoc"/>
+            <item
+                android:id="@+id/nav_printer_business_setting"
+                android:icon="@drawable/ic_business"
+                android:title="Business Operation Setting" />
+
+            <item android:id="@+id/nav_logout_printer"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/menu_logout"/>
+
+        </menu>
+    </item>
+</group>
+
+</menu>

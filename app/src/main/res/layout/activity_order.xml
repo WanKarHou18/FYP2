@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CLorder2"
+                android:layout_width="403dp"
+                android:layout_height="171dp"
+                android:background="@color/light_purple_800"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CLorder">
+
+                <Button
+                    android:id="@+id/btnClearOrder"
+                    android:layout_width="127dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Clear"
+                    android:textSize="14sp"
+                    app:backgroundTint="#FF8F00"
+                    app:layout_constraintEnd_toStartOf="@+id/btnConfirmOrder"
+                    app:layout_constraintStart_toEndOf="@+id/btnAddOrder"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnAddOrder"
+                    android:layout_width="127dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Add"
+                    android:textSize="14sp"
+                    app:backgroundTint="#FF8F00"
+                    app:layout_constraintEnd_toStartOf="@+id/btnClearOrder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnConfirmOrder"
+                    android:layout_width="127dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Confirm"
+                    android:textSize="14sp"
+                    app:backgroundTint="#FF8F00"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btnClearOrder"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CLorder"
+                android:layout_width="0dp"
+                android:layout_height="564dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ListView
+                    android:id="@+id/lvAllCustOrder"
+                    android:layout_width="411dp"
+                    android:layout_height="483dp"
+                    android:background="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="406dp"
+                    android:layout_height="84dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lvAllCustOrder">
+
+                    <TextView
+                        android:id="@+id/tv_totalCost"
+                        android:layout_width="251dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/purple_800"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="Total Cost"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:id="@+id/tv_totalCostDisplay"
+                        android:layout_width="122dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/purple_800"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

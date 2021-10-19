@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_CostDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_printer.Order.PrinterViewSubOrderDetailsActivity">
+
+    <FrameLayout
+        android:id="@+id/FL_printPrefDisplay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_banner_fileInfo__CVSOD"
+                android:layout_width="414dp"
+                android:layout_height="57dp"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="File Info"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CL_banner_printingPref"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout24">
+
+                <TextView
+                    android:id="@+id/tv_banner_printing_pref1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/purple_800"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:shadowColor="#FFFFFF"
+                    android:text="Printing Preferences"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout24"
+                android:layout_width="409dp"
+                android:layout_height="169dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_banner_fileInfo__CVSOD">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="250dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/iv_downloadFile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            app:srcCompat="@drawable/ic_download" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_FileName_display_PVSODA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/red_800"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_FileType_display"
+                        android:layout_width="147dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:text="File Type:"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fileType_PVSODA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/red_800"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_subOrderPrintPref_PVSODA1"
+                android:layout_width="411dp"
+                android:layout_height="207dp"
+                android:paddingLeft="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CL_banner_printingPref">
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout32"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lv_subOrderPrintPref_PVSODA1">
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center|right"
+                    android:text="Cost:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_cost_PVSODA1"
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:text="RM0.00"
+                    android:textColor="@color/red_800"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

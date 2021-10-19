@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyRatingBar" parent="Theme.AppCompat">
+        <item name="colorAccent">#f9a825</item>
+    </style>
+</resources>

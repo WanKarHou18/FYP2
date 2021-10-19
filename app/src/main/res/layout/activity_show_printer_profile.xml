@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CL_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui_customer.CustomerOrdersList.ShowPrinterProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="413dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="100dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CLup">
+
+                <Button
+                    android:id="@+id/btn_feedback_SPPA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_marginBottom="23dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Feedback"
+                    app:backgroundTint="#FF8F00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_complaint_SPPA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Complain"
+                    app:backgroundTint="#FF8F00"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_feedback_SPPA"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CLup"
+                android:layout_width="0dp"
+                android:layout_height="332dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/view_header"
+                    android:layout_width="408dp"
+                    android:layout_height="146dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_header"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/layout_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/view_header"
+                    app:layout_constraintTop_toBottomOf="@+id/view_header">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="391dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="15dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="358dp"
+                            android:layout_height="match_parent"
+                            android:background="#2FC6C0C0">
+
+                            <TextView
+                                android:id="@+id/tvUsername_SPPA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="45dp"
+                                android:fontFamily="@font/raleway_semibold"
+                                android:gravity="center"
+
+                                android:text="Username "
+                                android:textColor="@color/purple_800"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvAbout"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway_medium"
+                                android:gravity="center"
+                                android:textColor="#020202"
+                                android:textSize="18sp"
+                                app:layout_constraintTop_toBottomOf="@+id/tvUsername_SPPA" />
+
+                            <ImageView
+                                android:id="@+id/iv_phone_SPPA"
+                                android:layout_width="59dp"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="52dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="16dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvAbout"
+                                app:layout_constraintVertical_bias="1.0"
+                                app:srcCompat="@android:drawable/sym_action_call" />
+
+                            <TextView
+                                android:id="@+id/tv_email_SPPA"
+                                android:layout_width="207dp"
+                                android:layout_height="31dp"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginTop="22dp"
+                                android:layout_marginBottom="15dp"
+                                android:fontFamily="@font/raleway_medium"
+                                android:text="Email_display"
+                                android:textColor="#020202"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/iv_phone_SPPA"
+                                app:layout_constraintTop_toBottomOf="@+id/tvAbout"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="89dp"
+                    android:layout_height="78dp"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_male"
+                    app:layout_constraintBottom_toTopOf="@+id/layout_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="@+id/layout_profile"
+                    app:layout_constraintVertical_bias="0.511" />
+
+                <TextView
+                    android:id="@+id/rating_tags"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:paddingLeft="20dp"
+                    android:text="Rate Me"
+                    android:textAllCaps="true"
+                    android:textColor="@color/red_800"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_profile" />
+
+                <LinearLayout
+                    android:id="@+id/layout_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rating_tags">
+
+                    <RatingBar
+                        android:id="@+id/rbar_printer_SPPA"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#2A00BCD4" />
+
+                    <TextView
+                        android:id="@+id/tv_rating_SPPA"
+                        android:layout_width="145dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#2A00BCD4"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:text="0 stars / 0 respondent"
+                        android:textColor="@color/red_800"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

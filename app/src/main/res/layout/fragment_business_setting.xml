@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FL_businessSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_printer.BusinessSetting.businessSettingFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="407dp"
+            android:layout_height="56dp"
+            android:background="@color/purple_800"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"
+            android:text="Shipping Option"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="405dp"
+            android:layout_height="229dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <CheckBox
+                android:id="@+id/cb_bS_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingLeft="15dp"
+                android:text="Delivery"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="Start Time :"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_bS_startTime"
+                    android:layout_width="198dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="e.g 0000"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/red_800"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_startTime_errorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="60dp"
+                android:textColor="@color/red_800"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="End Time:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_bS_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="e.g 2359"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/red_800"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_endTime_errorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="60dp"
+                android:textColor="@color/red_800"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Distance(km) :"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_bS_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="1.3"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/red_800"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_distance_errorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="60dp"
+                android:textColor="@color/red_800"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="407dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <CheckBox
+                android:id="@+id/cb_bS_selfPick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingLeft="15dp"
+                android:text="Self Pick"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_800"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"
+            android:text="Advanced Functionalities"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="411dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple_800"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"
+            android:text="Payment Setting"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="407dp"
+            android:layout_height="144dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+            <CheckBox
+                android:id="@+id/cb_bS_RejectBlurry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Reject Blurry Image"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cb_bS_rejectAdult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Reject Image with Adult Content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cb_bS_rejectPPI"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Reject Images that does not reach minimum PPI"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_bS_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="139dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Save"
+            app:backgroundTint="#FF8F00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout27" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout27"
+            android:layout_width="409dp"
+            android:layout_height="108dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44">
+
+            <CheckBox
+                android:id="@+id/cb_CODsetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Cash on Delivery"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cb_onlinePaymentSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Online Payment"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</FrameLayout>

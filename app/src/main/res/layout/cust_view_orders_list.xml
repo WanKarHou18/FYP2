@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2FC6C0C0">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="322dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_orderStatusCVO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_800"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="PENDING"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tv_printerNameCVO"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingLeft="20dp"
+                android:text="Customer Name"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_custHPCVO"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingLeft="20dp"
+                android:text="HP"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_dateTimeCVO"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingLeft="20dp"
+                android:text="Date Time"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_orderAddressCVO"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingLeft="20dp"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_deliveryModeCVO"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="DeliveryMode"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_paymentMethodCVO"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingLeft="20dp"
+                android:text="Payment Method"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="right"
+                    android:paddingRight="100dp"
+                    android:text="COST:"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_ttlCostCVO"
+                    android:layout_width="253dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="RM0.00"
+                    android:textColor="@color/red_800"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

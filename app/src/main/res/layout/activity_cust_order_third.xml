@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_CostDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_customer.Orders.CustOrderThirdActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/FL_printPrefDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/light_purple_800">
+
+                <TextView
+                    android:id="@+id/tv_banner_fileInfo"
+                    android:layout_width="406dp"
+                    android:layout_height="83dp"
+                    android:background="@color/purple_800"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:text="File Info And Cost"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnAddOrder_3"
+                    android:layout_width="180dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="126dp"
+                    android:layout_marginLeft="126dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="105dp"
+                    android:layout_marginRight="105dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Add"
+                    app:backgroundTint="#FF8F00"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CL_printing_pref_display" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/CL_printing_pref_display"
+                    android:layout_width="404dp"
+                    android:layout_height="410dp"
+                    android:background="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CL_banner_printingPref">
+
+                    <ListView
+                        android:id="@+id/lv_printing_pref"
+                        android:layout_width="409dp"
+                        android:layout_height="0dp"
+                        android:paddingLeft="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/CL_banner_printingPref"
+                    android:layout_width="411dp"
+                    android:layout_height="77dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout23">
+
+                    <TextView
+                        android:id="@+id/tv_banner_printing_pref"
+                        android:layout_width="406dp"
+                        android:layout_height="76dp"
+                        android:background="@color/purple_800"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Printing Preferences"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout23"
+                    android:layout_width="406dp"
+                    android:layout_height="276dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_banner_fileInfo">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <Button
+                            android:id="@+id/btn_preview"
+                            android:layout_width="146dp"
+                            android:layout_height="43dp"
+                            android:background="@color/white"
+                            android:shadowColor="@color/black"
+                            android:text="Preview"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            app:backgroundTint="#FF8F00"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_FileName_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/red_800"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="File Type"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_FileType_display1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Pages"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="168dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="Pages"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Pages_display1"
+                            android:layout_width="205dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="22dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:text="Cost(RM)"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_cost_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="center"
+                            android:textColor="@color/red_800"
+                            android:textSize="16sp"
+                            tools:text="RM0.00" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple_800"
+    tools:context=".animation.splash">
+
+    <TextView
+        android:id="@+id/tvSplash1"
+        android:layout_width="354dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="@string/splash_txt1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logo"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="264dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="FRENZ"
+        android:textColor="@color/white"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#2196F3"
+        android:textColorLink="#FFFFFF"
+        android:textSize="72sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

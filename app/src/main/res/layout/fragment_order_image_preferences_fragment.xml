@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_customer.Orders.OrderImagePreferencesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="413dp"
+                android:layout_height="345dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CL_top">
+
+                <Spinner
+                    android:id="@+id/spinner_paperSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_paperType"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCopies"
+                        android:layout_width="142dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:text="Copies:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_imgCopies"
+                        android:layout_width="263dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="eg. 2"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <Button
+                        android:id="@+id/btn_continue_ImagePref"
+                        android:layout_width="148dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="141dp"
+                        android:layout_marginLeft="141dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="141dp"
+                        android:layout_marginRight="141dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/raleway_semibold"
+
+                        android:text="Continue"
+                        app:backgroundTint="#FF8F00"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CL_top"
+                android:layout_width="0dp"
+                android:layout_height="99dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btn_uploadImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="94dp"
+                    android:layout_marginLeft="94dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="94dp"
+                    android:layout_marginRight="94dp"
+                    android:layout_marginBottom="35dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:onClick="FileUpload"
+                    android:text="Select Image"
+                    app:backgroundTint="@color/light_purple_800"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
